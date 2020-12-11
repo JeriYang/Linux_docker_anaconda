@@ -21,7 +21,7 @@ Record various common and easy-to-forget command. 指令记录相关
 <br>
 PS:建议[阿里，清华源](https://blog.csdn.net/ljh_csdn_ljh/article/details/90294202)
 
-步骤：
+步骤：<br>
 1）用户页面建立隐藏的local文件夹：
 
     mkdir .local
@@ -38,10 +38,29 @@ PS:建议[阿里，清华源](https://blog.csdn.net/ljh_csdn_ljh/article/details
     # 创建一个名为python34的环境，指定Python版本是3.4（不用管是3.4.x，conda会为我们自动寻找3.x.x中的最新版本）
     conda create --name python34 python=3
 
-4) 安装好后，使用activate激活某个环境：
+4）安装好后，使用activate激活某个环境：
 
     activate python34 # for Windows
     source activate python34 # for Linux & Mac
+    
+    # 删除一个已有的环境
+    conda remove --name python34 --all
+    
+    # 如果想返回默认的python 2.7环境，运行
+    deactivate python34 # for Windows
+    source deactivate python34 # for Linux & Mac
+
+5）更换源：
+
+    # 先查看已经安装过的镜像源，执行命令：
+    conda config --show
+    # 查看配置项channels，如果显示带有tsinghua，则说明已安装过清华镜像。
+    # 下一步，使用conda config --remove channels url地址删除清华镜像，如下命令删除第一个。然后，依次删除所有镜像源
+    conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/tensorflow/linux/cpu/
+    添加目前可用的中科大镜像源：
+    conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+    并设置搜索时显示通道地址：
+    conda config --set show_channel_urls yes
 
 ## docker安装
 pass<br>
