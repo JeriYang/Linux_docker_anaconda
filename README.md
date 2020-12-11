@@ -21,6 +21,27 @@ Record various common and easy-to-forget command. 指令记录相关
 <br>
 PS:建议[阿里，清华源](https://blog.csdn.net/ljh_csdn_ljh/article/details/90294202)
 
+步骤：
+1）用户页面建立隐藏的local文件夹：
+
+    mkdir .local
+
+2）运行anaconda.sh安装包文件：
+
+    bash anaconda.sh
+    /home/username/.local/anaconda  # 自定义路径部分
+    #安装完成后，重启远程链接
+    #使用conda测试
+
+3）建立conda环境：
+
+    # 创建一个名为python34的环境，指定Python版本是3.4（不用管是3.4.x，conda会为我们自动寻找3.x.x中的最新版本）
+    conda create --name python34 python=3
+
+4) 安装好后，使用activate激活某个环境：
+
+    activate python34 # for Windows
+    source activate python34 # for Linux & Mac
 
 ## docker安装
 pass<br>
