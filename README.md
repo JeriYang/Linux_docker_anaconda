@@ -22,6 +22,7 @@ Record various common and easy-to-forget command. 指令记录相关
 3.[更改pip源/anaconda源](https://blog.csdn.net/u012436149/article/details/66974668) <br>
 <br>
 PS:建议[阿里，清华源](https://blog.csdn.net/ljh_csdn_ljh/article/details/90294202)
+[jupyter增加多版本python内核](https://blog.csdn.net/flyer_tang/article/details/81305087)
 
 步骤：<br>
 1）用户页面建立隐藏的local文件夹：
@@ -68,6 +69,8 @@ PS:建议[阿里，清华源](https://blog.csdn.net/ljh_csdn_ljh/article/details
 
     # 查看conda环境：
     conda info --envs
+    conda env list
+    
 ## docker安装
 pass<br>
 
