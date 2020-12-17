@@ -64,6 +64,10 @@ PS:建议[阿里，清华源](https://blog.csdn.net/ljh_csdn_ljh/article/details
     并设置搜索时显示通道地址：
     conda config --set show_channel_urls yes
 
+6）conda相关命令
+
+    # 查看conda环境：
+    conda info -envs
 ## docker安装
 pass<br>
 
