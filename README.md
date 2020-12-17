@@ -67,7 +67,7 @@ PS:建议[阿里，清华源](https://blog.csdn.net/ljh_csdn_ljh/article/details
 6）conda相关命令
 
     # 查看conda环境：
-    conda info -envs
+    conda info --envs
 ## docker安装
 pass<br>
 
