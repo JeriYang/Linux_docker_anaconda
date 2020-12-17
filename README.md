@@ -5,11 +5,13 @@ Record various common and easy-to-forget command. 指令记录相关
 - [Linux下的环境安装](#Linux下的环境安装)
 	- [anaconda安装](#conda安装)
 	- [docker安装](#docker安装)
+	- [gpu安装](#gpu安装)
 - [常用易忘指令汇总](#指令汇总)
 	- [Linux指令](#Linux)
 		- [tmux托管进程](#tmux)
 		- [vim文本编辑器](#vim)
 		- [proxychains代理](#proxychains)
+		- [GPU相关信息](#GPU)
 
 
 # Linux下的环境安装
@@ -65,6 +67,14 @@ PS:建议[阿里，清华源](https://blog.csdn.net/ljh_csdn_ljh/article/details
 ## docker安装
 pass<br>
 
+## gpu安装
+查看cuda()是否可以使用：
+
+    import torch
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    # Assume that we are on a CUDA machine, then this should print a CUDA device:
+    print(device)
+
 # 指令汇总
 ## Linux指令
 ### tmux
@@ -114,7 +124,10 @@ pass<br>
     gg：快速到文件头
     G：快速到文件尾
     50G：跳转到第 50 行
-pass<br>
 
 ### proxychains
 pass<br>
+
+### GPU
+
+    nvidia-smi：查看本机GPU状态
