@@ -12,6 +12,7 @@ Record various common and easy-to-forget command. 指令记录相关
 		- [vim文本编辑器](#vim)
 		- [proxychains代理](#proxychains)
 		- [GPU相关信息](#GPU)
+	- [Git指令](#Git)
 
 
 # Linux下的环境安装
@@ -138,3 +139,19 @@ pass<br>
 ### GPU
 
     nvidia-smi：查看本机GPU状态
+    
+    watch -n 1 nvidia-smi：实时监控GPU的使用情况。其中1是动态刷新的时间间隔
+    
+    ps -aux：这个指令可以看到当前服务器下的各种信息
+
+## Git指令
+
+Git global set up
+
+'''
+git config --global user.name 'jeriYang'
+git config --global user.email 'xxx@gmail.com'
+'''
+
+
+
