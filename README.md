@@ -84,7 +84,7 @@ pass<br>
     print(device)
 
 # 指令汇总
-## Linux指令
+## Linux
 ### tmux
 启动新会话：
 
@@ -144,14 +144,30 @@ pass<br>
     
     ps -aux：这个指令可以看到当前服务器下的各种信息
 
-## Git指令
+## Git
+Git global set up
+
+    git config --global user.name 'jeriYang'
+    git config --global user.email 'xxx@gmail.com'
 
 Git global set up
 
-'''
-git config --global user.name 'jeriYang'
-git config --global user.email 'xxx@gmail.com'
-'''
+    git clone http://gitlab.alibaba-inc.com/tjxxx/hpxxx.git
+    cd hpxxx
+    touch README.md
+    git add README.md
+    git commit -m "add README"
+    git push -u origin master
+ 
+ Existing folder or Git repository
 
+    cd existiong_folder
+    git init
+    git remote add origin http://gitlab.alibaba-inc.com/tjxxx/hpxxx.git
+    git add .
+    git commit -m "push的描述"
+    git push -u origin master
 
+Pull相关操作
 
+    git pull origin master ： 相当于是从远程获取最新版本并merge到本地
