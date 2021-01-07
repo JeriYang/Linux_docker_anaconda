@@ -1,4 +1,4 @@
-# Linux_docker_anaconda
+# Linux_docker_anaconda_git
 Record various common and easy-to-forget command. 指令记录相关
 
 # 目录
@@ -171,3 +171,8 @@ Git global set up
 Pull相关操作
 
     git pull origin master ： 相当于是从远程获取最新版本并merge到本地
+    
+Readme.md添加图片
+
+    ![image](图片地址)
+   
